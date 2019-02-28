@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="Tests/Resources/app/autoload.php">
+    <php>
+        <env name="BOOTSTRAP_CLEAR_CACHE_ENV" value="test"/>
+        <server name="KERNEL_DIR" value="Tests/Resources/app" />
+    </php>
+
+    <testsuites>
+        <testsuite name="YoYogaBear PhpcrBundle Test Suite">
+            <directory>Tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory>.</directory>
+            <exclude>
+                <directory>Resources/</directory>
+                <directory>Tests/</directory>
+                <directory>vendor/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-clover" target="build/logs/clover.xml"/>
+        <log type="coverage-php" target="build/logs/coverage.cov"/>
+    </logging>
+</phpunit>

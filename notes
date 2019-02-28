@@ -1,0 +1,3 @@
+#!/bin/bash
+composer.phar req template log asset form workflow twig-extensions annotations router expression-language security http php-translation/symfony-bundle validation translation knplabs/knp-menu-bundle doctrine/phpcr-dbal-symfony-pack:^1.0@dev api-platform
+composer.phar req --dev server php-cs-fixer phpmd/phpmd security-checker profiler webpack-encore-pack maker debug

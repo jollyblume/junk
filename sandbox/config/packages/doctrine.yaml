@@ -1,0 +1,54 @@
+parameters:
+    # Adds a fallback DATABASE_URL if the env var is not set.
+    # This allows you to run cache:warmup even if your
+    # environment variables are not available yet.
+    # You should not need to change this value.
+    env(DATABASE_URL): ''
+
+doctrine:
+    dbal:
+        url: '%env(resolve:DATABASE_URL)%'
+    orm:
+        auto_generate_proxy_classes: '%kernel.debug%'
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+        # mappings:
+        #     App:
+        #         is_bundle: false
+        #         type: xml
+        #         dir: '%kernel.project_dir%/config/doctrine'
+        #         prefix: 'App\Entity'
+        #         alias: App
+
+doctrine_phpcr:
+    session:
+        backend:
+            type: doctrinedbal
+            # connection: default
+
+            caches:
+                meta: doctrine_cache.providers.phpcr_meta
+                nodes: doctrine_cache.providers.phpcr_nodes
+            # enable logging
+            logging: true
+            # enable profiling in the debug toolbar.
+            profiling: "%kernel.debug%"
+        workspace: default
+        username: admin
+        password: admin
+    odm:
+        auto_mapping: true
+        auto_generate_proxy_classes: "%kernel.debug%"
+        mappings:
+            App:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/config/doctrine-phpcr'
+                prefix: 'App\Document'
+
+doctrine_cache:
+    providers:
+        phpcr_meta:
+            type: file_system
+        phpcr_nodes:
+            type: file_system

@@ -1,0 +1,4 @@
+/* Dark orange, turqoise and pink text */
+@include text-emphasis-variant( '.wt-text-staff', $wt-orange-dark);
+@include text-emphasis-variant( '.wt-text-focus', $wt-turquoise-dark);
+@include text-emphasis-variant( '.wt-text-results', $wt-pink-dark);

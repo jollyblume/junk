@@ -1,0 +1,12 @@
+{% extends 'react/react-layout.html.twig' %}
+
+{% block react_script %}
+  {% spaceless %}
+    basic-scroll.js
+  {% endspaceless %}
+{% endblock react_script %}
+
+{% block main_content %}
+  <h1>react/react-scroll.html.twig</h1>
+  <div id="basic-scroll-window"></div>
+{% endblock main_content %}

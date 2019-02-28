@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body {
+        padding-top: 80px;
+      }
+      *[id]:before {
+        display: block;
+        content: " ";
+        margin-top: -80px;
+        height: 80px;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        {% for section in ['', 'hero', 'player', 'team', 'calendar', 'contact'] %}
+          <li>
+            <a href="#{{ section }}">
+              #{{ section }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <h1 id="hero">Hero</h1>
+      <p>Pharetra vestibulum turpis volutpat, elit orci, quis, cras. Felis ultrices vulputate molestie maecenas, convallis tristique pellentesque rhoncus velit quis hendrerit elementum ac quis volutpat consequat at, a, pede congue! Ultricies blandit luctus eu ornare pellentesque tristique placerat justo orci.</p>
+      <p>Primis, in faucibus porttitor mauris, fermentum. Adipiscing, massa cras suspendisse consectetuer congue magna eleifend, iaculis, ultricies vel feugiat dui pharetra faucibus diam placerat felis euismod ultrices libero consectetuer ligula fusce sed. Pretium quis ligula pede.</p>
+    <h1 id="player">Player</h1>
+      <p>Pharetra vestibulum turpis volutpat, elit orci, quis, cras. Felis ultrices vulputate molestie maecenas, convallis tristique pellentesque rhoncus velit quis hendrerit elementum ac quis volutpat consequat at, a, pede congue! Ultricies blandit luctus eu ornare pellentesque tristique placerat justo orci.</p>
+      <p>Primis, in faucibus porttitor mauris, fermentum. Adipiscing, massa cras suspendisse consectetuer congue magna eleifend, iaculis, ultricies vel feugiat dui pharetra faucibus diam placerat felis euismod ultrices libero consectetuer ligula fusce sed. Pretium quis ligula pede.</p>
+    <h1 id="team">Team</h1>
+      <p>Pharetra vestibulum turpis volutpat, elit orci, quis, cras. Felis ultrices vulputate molestie maecenas, convallis tristique pellentesque rhoncus velit quis hendrerit elementum ac quis volutpat consequat at, a, pede congue! Ultricies blandit luctus eu ornare pellentesque tristique placerat justo orci.</p>
+      <p>Primis, in faucibus porttitor mauris, fermentum. Adipiscing, massa cras suspendisse consectetuer congue magna eleifend, iaculis, ultricies vel feugiat dui pharetra faucibus diam placerat felis euismod ultrices libero consectetuer ligula fusce sed. Pretium quis ligula pede.</p>
+    <h1 id="calendar">Calendar</h1>
+      <p>Pharetra vestibulum turpis volutpat, elit orci, quis, cras. Felis ultrices vulputate molestie maecenas, convallis tristique pellentesque rhoncus velit quis hendrerit elementum ac quis volutpat consequat at, a, pede congue! Ultricies blandit luctus eu ornare pellentesque tristique placerat justo orci.</p>
+      <p>Primis, in faucibus porttitor mauris, fermentum. Adipiscing, massa cras suspendisse consectetuer congue magna eleifend, iaculis, ultricies vel feugiat dui pharetra faucibus diam placerat felis euismod ultrices libero consectetuer ligula fusce sed. Pretium quis ligula pede.</p>
+    <h1 id="contact">Contact us</h1>
+      <p>Pharetra vestibulum turpis volutpat, elit orci, quis, cras. Felis ultrices vulputate molestie maecenas, convallis tristique pellentesque rhoncus velit quis hendrerit elementum ac quis volutpat consequat at, a, pede congue! Ultricies blandit luctus eu ornare pellentesque tristique placerat justo orci.</p>
+      <p>Primis, in faucibus porttitor mauris, fermentum. Adipiscing, massa cras suspendisse consectetuer congue magna eleifend, iaculis, ultricies vel feugiat dui pharetra faucibus diam placerat felis euismod ultrices libero consectetuer ligula fusce sed. Pretium quis ligula pede.</p>
+  </body>
+</html>

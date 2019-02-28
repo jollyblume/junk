@@ -1,0 +1,94 @@
+{% extends "@App/layout.html.twig" %}
+
+{% block title_template %}
+  one-page find
+{% endblock title_template %}
+
+{% block navbar %}{% endblock navbar %}
+
+{% block footer %}{% endblock footer %}
+
+{% block main %}
+  <section class="about" id="about">
+    <div class="about-card-wrapper">
+      <div class="card card-outline">
+
+        <div class="card-block pb-0">
+          <h1 class="card-title">{{ words(2,3) }}</h1>
+          <h5 class="card-subtitle">
+            <span class="fa fa-arrow-circle-right" aria-hidden="true">
+              Future Walk Train information (about) content
+            </span>
+          </h5>
+          <div class="card-block">
+            <p class="card-text">{{ sentences(1) }}</p>
+          </div>
+        </div>
+
+        <div class="card-block pt-0">
+          <div class="row">
+
+            <div class="col-md-4 col-sm-12">
+              <div class="card card-staff">
+                <a data-toggle="collapse" href="#card-staff-info" aria-expanded="false" aria-controls="Content about our focus">
+                  <img class="card-img-top img-fluid" src="/bundles/app/img/dogs-walking.jpg" alt="Background image for staff card"/>
+                </a>
+                <div class="card-img-overlay px-0">
+                  <div class="card-block card-inverse text-center">
+                    <span class="about-title font-weight-bold">STAFF</span>
+                  </div>
+                </div>
+                <div class="collapse" id="card-staff-info">
+                  <div class="card-block">
+                    <p class="card-text wt-text-staff">{{ sentences(2) }}</p>
+                    <a class="card-link" href="#" aria-expanded="false" aria-controls="Read more about our staff">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <div class="card card-focus">
+                <a data-toggle="collapse" href="#card-focus-info" aria-expanded="false" aria-controls="Content about our focus">
+                  <img class="card-img-top img-fluid" src="/bundles/app/img/dogs-resting.jpg" alt="Background image for focus card"/>
+                </a>
+                <div class="card-img-overlay px-0">
+                  <div class="card-block card-inverse text-center">
+                    <span class="about-title font-weight-bold">FOCUS</span>
+                  </div>
+                </div>
+                <div class="collapse" id="card-focus-info">
+                  <div class="card-block">
+                    <p class="card-text wt-text-focus">{{ sentences(2) }}</p>
+                    <a class="card-link" href="#" aria-expanded="false" aria-controls="Read more about our focus">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+              <div class="card card-results">
+                <a data-toggle="collapse" href="#card-results-info" aria-expanded="false" aria-controls="Content about our pets">
+                  <img class="card-img-top img-fluid" src="/bundles/app/img/dogs-training.jpg" alt="Background image for results card"/>
+                </a>
+                <div class="card-img-overlay px-0">
+                  <div class="card-block card-inverse text-center">
+                    <span class="about-title font-weight-bold">RESULTS</span>
+                  </div>
+                </div>
+                <div class="collapse" id="card-results-info">
+                  <div class="card-block">
+                    <p class="card-text wt-text-results">{{ sentences(2) }}</p>
+                    <a class="card-link" href="#" aria-expanded="false" aria-controls="Read more about our results">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+{% endblock main %}

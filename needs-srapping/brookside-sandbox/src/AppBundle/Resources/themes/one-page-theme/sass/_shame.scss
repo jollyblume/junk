@@ -1,0 +1,42 @@
+/*
+ * fab (actually all infrastructure artifacts) must:
+ *  - fade away when scrolling starts
+ *  - fade in when scrolling stops
+ */
+.btn-fab {
+  @for $i from 2 through 6 {
+    &:nth-last-of-type(#{$i}) {
+      transition-delay: #{($i - 1) * 20ms};
+    }
+  }
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 20px auto 0;
+  text-decoration: none;
+  position: relative;
+  border-radius: 50%;
+  opacity: 0;
+  @extend .resting-3;
+  @extend .goal-5;
+
+  &:nth-last-of-type(2) {
+    background-color: $black;
+  }
+
+  &:nth-last-of-type(3) {
+    background-color: $green;
+  }
+
+  &:nth-last-of-type(4) {
+    background-color: $yellow;
+  }
+
+  &:nth-last-of-type(5) {
+    background-color: $blue;
+  }
+
+  &:nth-last-of-type(6) {
+    background-color: $pink;
+  }
+}

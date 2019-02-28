@@ -1,0 +1,36 @@
+{
+    "name": "jollyblume/graph-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+
+    "autoload": {
+        "psr-4": {
+            "Jollyblume\\Bundle\\GraphBundle\\": "src"
+        },
+        "classmap": [
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        },
+        "files": [
+        ]
+    },
+    "require": {
+        "php": ">=7.1",
+        "doctrine/collections": "^1.5"
+    },
+    "require-dev": {
+        "phpmd/phpmd": "^2.6",
+        "phpunit/php-code-coverage": "^5.2",
+        "phpunit/phpunit": "^6.3",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": null
+    }
+}

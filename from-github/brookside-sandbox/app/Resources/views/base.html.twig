@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="{{ app.request.locale }}">
+  <head>
+    {% block head %}
+      {% block head_meta %}
+        <meta charset="{{ _charset }}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+      {% endblock head_meta %}
+      {% block seo_meta %}{# todo get meta tags from seo bundle #}{% endblock seo_meta %}
+      <title>
+        {% block title %}
+          {% block title_template %}
+          {% endblock title_template %}
+        {% endblock title %}
+      </title>
+      {% block favicon %}
+        <link rel="icon" href="/favicon.ico"/>
+      {% endblock favicon %}
+      {% block webpack_vendor_style %}
+      <link rel="stylesheet" href="{{ asset('build/vendor.css') }}" />
+      {% endblock webpack_vendor_style %}
+
+      {% block head_style %}{% endblock head_style %}
+      {% block head_script %}{% endblock head_script %}
+      {% block head_bottom %}{% endblock head_bottom %}
+    {% endblock head %}
+  </head>
+  <body>
+    {% block skip_nav %}{# todo code navigation skip for screen readers #}{% endblock skip_nav %}
+    {% block body %}
+      <header>
+        {% block header %}
+          {% block navbar %}{% endblock navbar %}
+          {% block header_extra %}{% endblock header_extra %}
+        {% endblock header %}
+      </header>
+      {% if is_fluid %}
+        <div class="container-fluid">
+      {% else %}
+        <div class="container">
+      {% endif %}
+        <main>
+          {% block main %}{% endblock main %}
+        </main>
+      </div>
+      {% block footer %}{% endblock footer %}
+      {% block foot_script %}
+        {% block webpack_vendor_js %}
+          <script src="{{ asset('build/manifest.js') }}"></script>
+          <script src="{{ asset('build/vendor.js') }}"></script>
+        {% endblock webpack_vendor_js %}
+
+        {% block foot_script_start %}
+        {% endblock foot_script_start %}
+
+        {% block data_toggle %}
+          <script type="text/javascript">
+            $(document).ready(function() {
+              $('[data-toggle="tooltip"]').tooltip();
+              $('[data-toggle="popover"]').popover();
+              {% block document_ready %}{% endblock document_ready %}
+            });
+          </script>
+
+          {% block foot_script_end %}
+          {% endblock foot_script_end %}
+        {% endblock data_toggle %}
+      {% endblock foot_script %}
+      {% block foot_script_extra %}{% endblock foot_script_extra %}
+    {% endblock body %}
+  </body>
+</html>

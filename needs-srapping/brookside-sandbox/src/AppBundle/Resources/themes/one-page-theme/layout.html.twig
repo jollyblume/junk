@@ -1,0 +1,54 @@
+{% extends "layout.html.twig" %}
+
+{% block foot_script_end %}
+  <script src="{{ asset('build/one-page.js') }}"></script>
+{% endblock foot_script_end %}
+
+{% block title_template %}
+  one-page-theme
+{% endblock title_template %}
+
+{% block head_style %}
+  <!-- one-page-theme css -->
+  <link rel="stylesheet" href="{{ asset('build/one-page-theme.css') }}">
+{% endblock head_style %}
+
+{% block footer %}
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col">
+        <p>
+          &copy;
+          <a href="http://brooksidewalkandtrain.com/">Brookside Walk Train Play</a>
+          2017
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock footer %}
+
+{% block navbar_disabled %}
+  <nav class="navbar navbar-toggleable-xs  fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="fa fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <a class="navbar-brand font-weight-bold" href="#">
+        <div>
+          <span class="wt-text-staff">Walk</span>
+          <span class="wt-text-focus">Train</span>
+          <span class="wt-text-results">Play</span>
+        </div>
+      </a>
+      <div class="navbar-nav wt-text-focus bg-faded">
+        <a class="nav-item nav-link active" href="#about">
+          About
+          <span class="sr-only">(current)</span>
+        </a>
+        <a class="nav-item nav-link" href="#pricing">Pricing</a>
+        <a class="nav-item nav-link" href="#word">Word</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+{% endblock navbar_disabled %}

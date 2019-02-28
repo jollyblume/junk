@@ -1,0 +1,16 @@
+<doctrine-mapping
+    xmlns="http://doctrine-project.org/schemas/phpcr-odm/phpcr-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://doctrine-project.org/schemas/phpcr-odm/phpcr-mapping
+    https://github.com/doctrine/phpcr-odm/raw/master/doctrine-phpcr-odm-mapping.xsd"
+    >
+
+    <document
+        name="App\Document\TeamBag">
+        <!-- Valid child classes !-->
+        <child-class>App\Model\TeamInterface</child-class>
+        <child-class>App\Store\TeamStoreInterface</child-class>
+
+    </document>
+
+</doctrine-mapping>

@@ -1,0 +1,24 @@
+{% extends "layout.html.twig" %}
+
+{% block navbar_collapse %}
+  <span class="navbar-text">
+    react/react-layout.html.twig
+  </span>
+{% endblock navbar_collapse %}
+
+{% block main_content %}
+  <h1>react/react-layout.html.twig</h1>
+  <div id="main-content-window"></div>
+{% endblock main_content %}
+
+{% block head_style %}
+  {{ parent() }}
+
+  <link rel="stylesheet" href="{{ asset('build/css/react.css') }}" />
+{% endblock head_style %}
+
+{% block foot_script %}
+  {{ parent() }}
+
+  <script src="{{ asset('build/js/{% block react_script %}react.js{% endblock react_script %}') }}"></script>
+{% endblock foot_script %}

@@ -1,0 +1,196 @@
+{% block navbar_brand_img %}
+  <div>
+    <a href="/" class="navbar-brand">
+      <div class="logo">
+        <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" width="60" height="60"/>
+      </div>
+      <p>Creative
+        <br>
+        Tim</p>
+    </a>
+  </div>
+{% endblock navbar_brand_img %}
+
+{% block cool_navbar %}
+  <nav class="navbar filter-bar fixed-absolute">
+    <div class="container">
+      <div class="notification">
+        <div id="notif-message" class="notif-message" style="display: none;" notice-type=success></div>
+      </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div data-no-turbolink>
+          <a href="/" class="navbar-brand">
+            <div class="logo">
+              <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" width="60" height="60"/>
+            </div>
+            <p>Creative
+              <br>
+              Tim</p>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+        <ul class="nav navbar-nav navbar-right" data-no-turbolink>
+
+          <!-- <li>
+            <a href="javascript:void(0)" data-toggle="search-form">
+                <i class="icon-search icon-2x"></i>
+                <p>Search</p>
+            </a>
+        </li> -->
+
+          <li class="dropdown dropdown-categories" data-no-turbolink>
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="icon-th-large icon-2x"></i>
+              <p>
+                Categories
+                <span class="caret"></span>
+              </p>
+
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="/bootstrap-themes">
+                  All Categories
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/admin-dashboard">
+                  Admin &amp; Dashboards
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/ui-kit">
+                  UI Kits
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/free">
+                  Free Themes
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/premium">
+                  Premium Themes
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/angular-dashboard">
+                  Angular Dashboards
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/landing-page">
+                  Landing Pages
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/e-commerce">
+                  E-commerce
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/one-page-template">
+                  One Page Templates
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/wizard">
+                  Wizards
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/calendar">
+                  Calendar
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/login-form">
+                  Login Forms
+                </a>
+              </li>
+              <li>
+                <a href="/bootstrap-themes/components">
+                  Components
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="big-bundle" data-no-turbolink>
+            <a href="/product/buy/bundle/?utm_campaign=big-bundle&utm_medium=navbar&utm_source=tim">
+              <i class="icon-gift icon-2x"></i>
+              <p>Big Bundle</p>
+              <span class="notification-bubble notification-inverted">New</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="http://blog.creative-tim.com">
+              <i class="icon-align-left icon-2x"></i>
+              <p>Blog</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)" onclick="openLoginModal();" role="button" data-toggle="modal">
+              <i class="icon-male-sign-alt icon-2x"></i>
+              <p>Login/Register</p>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+{% endblock cool_navbar %}
+
+{% block cool_moving_navbar %}
+  <div class="top-moving-bar" data-no-turbolink>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-7 col-xs-7">
+          <a class="navbar-brand" href="/">
+            <div class="logo">
+              <img rel="tooltip" title="Hey! <br> Hope you're doing fine :-)" data-html="true" data-placement="bottom" src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png"/>
+            </div>
+          </a>
+          <h4>Material Kit
+
+            <div class="middot"></div>
+            <div class="mask">
+              <img rel="tooltip" data-placement="bottom" title="Fully Coded and Responsive HTML5" src="/assets/icon-html-e05de3f70999d3ce94b9804b7e298026.jpg" alt="Icon html"/>
+            </div>
+            <div class="mask">
+              <img rel="tooltip" data-placement="bottom" title="Sass Files for Professional Front End Developers" src="/assets/icon-sass-31b996b6252dbd1dd9c349bee39a5b8b.jpg" alt="Icon sass"/>
+            </div>
+            <div class="mask">
+              <img rel="tooltip" data-placement="bottom" title="Crafted with Bootstrap - the most popular Front End Framework" src="/assets/icon-bootstrap-7cec419b71f47386f443bd3fbfef2f7c.jpg" alt="Icon bootstrap"/>
+            </div>
+          </h4>
+        </div>
+        <div class="col-md-6 col-sm-5 col-xs-5 text-right">
+
+          <a class="btn btn-default btn-simple" target="_blank" href="http://demos.creative-tim.com/material-kit/index.html">Live Preview</a>
+
+          <a class="btn btn-default btn-round btn-fill" href="/product/material-kit-pro">Upgrade to PRO</a>
+
+          <a class="btn btn-info btn-fill btn-wd btn-round" data-toggle="modal" href="javascript:void(0)" onclick="openRegisterModal();">
+            Free Download
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock cool_moving_navbar %}

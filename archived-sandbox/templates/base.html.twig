@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+  <head>
+    {% block head_meta %}
+      <meta charset="{{ _charset }}"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% endblock head_meta %}
+    {% block seo_meta %}{# todo get meta tags from seo bundle #}{% endblock seo_meta %}
+    <title>{% block title %}{% endblock title %}</title>
+    {% block favicon %}
+      <link rel="icon" href="/favicon.ico"/>
+    {% endblock favicon %}
+    {% block head_script %}{% endblock head_script %}
+    {% block head_style %}
+      <link rel="stylesheet" href="{{ asset('build/vendor.css') }}" />
+    {% endblock head_style %}
+      <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+    {% block head_extra %}{% endblock head_extra %}
+  </head>
+  <body>
+    {% block no_script %}
+      <noscript>
+              You need to enable JavaScript to run this app.
+      </noscript>
+    {% endblock no_script %}
+    {% block body %}
+      {% block skip_nav %}
+        <a id="#{% block skip_nav_id %}skippy{% endblock skip_nav_id %}" class="sr-only sr-only-focusable"
+          <div class="container">
+            <span class="skiplink-text">Skip to main content</span>
+          </div>
+        </a>
+      {% endblock skip_nav %}
+      {% block header %}{% endblock header %}
+      <div id="skippy">
+        {% block main %}{% endblock main %}
+      </div>
+      {% block footer %}{% endblock footer %}
+      {% block foot_script %}
+        <script src="{{ asset('build/manifest.js') }}"></script>
+        <script src="{{ asset('build/vendor.js') }}"></script>
+      {% endblock foot_script %}
+      <script type="text/javascript">
+        $(document).ready(function() {
+          {% block document_ready %}
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+          {% endblock document_ready %}
+        });
+      </script>
+    {% endblock body %}
+  </body>
+</html>

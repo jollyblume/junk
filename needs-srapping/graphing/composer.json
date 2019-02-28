@@ -1,0 +1,30 @@
+{
+    "name": "jollyblume/graphing",
+    "type": "library",
+    "autoload": {
+        "psr-4": {"Jollyblume\\Component\\Graphing\\": "src/"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Jollyblume\\Component\\Tests\\Graphing\\": "tests/"}
+    },
+    "require": {
+        "doctrine/collections": "^1.5"
+    },
+    "require-dev": {
+        "phpmd/phpmd": "^2.6",
+        "phpunit/phpunit": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jollyblume"
+        }
+    ],
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": null
+    }
+}

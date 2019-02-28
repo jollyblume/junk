@@ -1,0 +1,242 @@
+{% extends "layout.html.twig" %}
+
+{% block navbar_collapse %}
+  <span class="navbar-text">
+    test/spa-layout.html.twig
+  </span>
+  <ul class="nav nav-pills ml-auto">
+    {% for section in ['hero', 'player', 'team', 'calendar', 'contact'] %}
+      <li class="nav-item">
+        <a class="nav-link" href="#{{- section -}}">
+          {{- section -}}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock navbar_collapse %}
+
+{% block main %}
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-12 hero-content">
+        <section id="hero">
+          {% block hero_content %}
+            <h1>Hero section</h1>
+            <p>
+            Velit cernantur mentitum. Ea elit vidisse adipisicing. Doctrina fidelissimae ex
+            probant, illum excepteur laboris.Dolor non quamquam iis sunt ita tempor
+            incurreret reprehenderit sed eu est illum ullamco, o ne aliqua senserit. Malis
+            ab sed duis doctrina, enim se arbitror. Id quem vidisse, culpa proident et
+            adipisicing.
+            </p>
+            <p>
+            Si ubi consectetur, qui velit quorum quo commodo sed hic summis nulla non
+            eiusmod est aliquip se voluptate, ad cillum cernantur litteris, quo senserit
+            adipisicing te quis te officia an in dolore constias. Quibusdam dolore mentitum
+            probant. Hic quem multos anim arbitror ex ipsum occaecat philosophari et est
+            admodum non vidisse, quae admodum imitarentur, e legam nescius efflorescere est
+            dolor distinguantur probant quae fabulas, ex irure veniam hic arbitror ex sed
+            dolore duis dolore voluptate.Quibusdam velit e aliquip instituendarum. Amet iis
+            singulis ab non voluptate concursionibus. Quo a multos laboris est non sint
+            incididunt deserunt, culpa praesentibus litteris quae deserunt, quorum cernantur
+            possumus, et nulla non dolor, hic quorum philosophari ne mandaremus irure summis
+            laborum fore ne hic ita duis commodo.
+            </p>
+            <p>
+            Nostrud concursionibus do appellat do quem possumus ne incurreret, officia velit
+            minim non eram, an malis senserit, aliqua quamquam si cupidatat, sint hic iis
+            malis expetendis, nulla pariatur possumus, fabulas dolor qui nescius
+            familiaritatem. Nulla aut id ipsum pariatur e summis qui offendit. Legam officia
+            voluptatibus, nisi o probant, ex illum quibusdam incurreret se amet e possumus
+            ea irure id probant legam quis ea elit, ubi ullamco si possumus, pariatur noster
+            nisi occaecat ipsum hic et summis comprehenderit.Aut elit cupidatat o fugiat
+            aliquip in probant eu ingeniis o multos, laborum ex labore, multos voluptate
+            cernantur ita commodo dolore dolor nam minim, quo sed elit quae magna, de et
+            despicationes. Doctrina exquisitaque do incididunt iis o minim ita quae.
+            Doctrina dolore tamen ad dolor. Ingeniis nam incurreret, te eram quem a
+            mandaremus.
+            </p>
+          {% endblock hero_content %}
+        </section>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-12 player-content">
+        <section id="player">
+          {% block player_content %}
+            <h1>Player section</h1>
+            <p>
+            Constias hic dolor laborum non e et ipsum singulis, arbitror anim quamquam de ut
+            eu concursionibus nam an quem appellat constias, non duis an noster aut in ab
+            efflorescere quo nam tamen e eram. Quis cernantur litteris. Ubi legam nescius
+            arbitror. Quibusdam sint appellat.Qui quis tractavissent, aute cupidatat eu
+            aliqua tamen. Anim mandaremus mentitum, fore litteris singulis id ab iis
+            instituendarum ea quo est sint mandaremus. Aliquip a tempor ingeniis, summis qui
+            qui legam officia hic ita expetendis de incididunt, an quo coniunctione. Iudicem
+            quid si eiusmod tractavissent sed a amet singulis.
+            </p>
+            <p>
+            Fabulas est deserunt, sed nulla velit ad ullamco. Quae ingeniis incididunt, non
+            proident ubi cupidatat, admodum id cillum senserit, quid senserit probant.
+            Singulis ne amet possumus. Esse aut senserit non quem ubi iudicem sunt laborum
+            nostrud eu ex esse si cillum, si ab enim dolore malis.Aut nulla ullamco
+            comprehenderit, nulla iudicem cohaerescant, quo amet nisi qui constias, ut ad
+            imitarentur ubi quo offendit o iudicem ut nam eram singulis a id constias
+            fidelissimae e dolor consequat consequat. Quibusdam est excepteur et ingeniis
+            aliqua probant. Sint in de nisi fabulas.
+            </p>
+            <p>
+            Tamen ita laborum ex quem, aut quorum ad aliqua ad multos ad ex velit laboris,
+            dolore iudicem a efflorescere se aliqua occaecat ad quem fugiat iis expetendis
+            dolore litteris possumus aut possumus quae est aliquip transferrem, minim aut
+            admodum. Ullamco o dolor. Cillum si singulis a sunt, ubi eram instituendarum ad
+            se summis eiusmod praesentibus, non ex relinqueret ita te anim ullamco appellat,
+            laborum dolor aliqua arbitror legam, nam se domesticarum, do nulla mandaremus
+            mandaremus. Sint mandaremus ne duis export id ne malis iudicem imitarentur ut
+            est laboris ad officia ad occaecat in litteris, noster fabulas e cohaerescant an
+            minim coniunctione quibusdam illum consequat sed quibusdam e constias si veniam
+            iis excepteur si illum.Ut duis fore magna nescius, commodo magna excepteur.
+            Culpa ab ad anim admodum, ad an cillum excepteur, quorum illustriora laborum
+            aliqua occaecat ne ad eiusmod hic offendit. Summis vidisse litteris e aut do
+            dolore vidisse ea nescius fugiat incididunt arbitror, hic amet deserunt
+            possumus, a veniam ea legam nam summis ullamco est transferrem te ex eu noster
+            probant, quo de quid quibusdam.
+            </p>
+          {% endblock player_content %}
+        </section>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-12 team-content">
+        <section id="team">
+          {% block team_content %}
+            <h1>Team section</h1>
+            <p>
+            Iis de magna quorum esse o irure ullamco ex officia qui quo quamquam ubi
+            mentitum o qui quae est summis. Mentitum a malis cupidatat nam nostrud dolore
+            singulis laborum ex fore officia nostrud, litteris a nostrud aut probant
+            praetermissum ita aliquip si fugiat domesticarum officia malis mentitum de
+            consequat duis nostrud possumus hic eiusmod nisi magna an tempor. Export nostrud
+            an quae fugiat.Ita illum fabulas imitarentur, incididunt imitarentur ab officia.
+            Anim aut ea veniam incurreret te legam qui consequat quo malis et o ullamco de
+            ingeniis, nisi offendit iis noster quem, quem ubi constias iis elit, ne a quae
+            magna ipsum de quid senserit occaecat non irure a nostrud ne esse. Consequat
+            quae cillum ullamco veniam.
+            </p>
+            <p>
+            Deserunt voluptatibus o laboris. Ne eram litteris, hic tempor ut sint. Ita legam
+            offendit constias, non enim tempor qui ullamco.Te appellat ea excepteur, labore
+            domesticarum litteris quis nostrud est occaecat quis singulis mandaremus, culpa
+            te offendit sed labore, ita legam incididunt quamquam qui nam ubi dolor
+            excepteur, labore eiusmod nam occaecat in nisi quibusdam e export fore. Est nam
+            noster culpa duis. Cupidatat domesticarum ubi laborum, tempor sed fabulas. In
+            illum domesticarum est ut laboris ne possumus ne quem de vidisse et irure, in
+            irure probant, enim ubi occaecat e constias in cernantur, do velit malis in
+            officia ad hic nostrud relinqueret.
+            </p>
+            <p>
+            Te te nisi nostrud, labore incididunt iis nulla esse hic ubi labore fabulas,
+            proident iis quorum expetendis hic o ipsum multos fugiat laboris, in amet quid
+            si commodo hic fabulas praetermissum nam laborum, dolor ut mentitum sed illum.
+            Tempor mentitum o duis elit, de fore admodum consequat. Quorum constias
+            distinguantur aut o tempor sempiternum.Ea cupidatat firmissimum, admodum anim
+            pariatur. Singulis labore admodum te iis aliqua tamen iis doctrina. Amet hic non
+            minim laboris, quem incurreret de amet legam ubi ne qui duis admodum, veniam ad
+            cupidatat. Dolore do mandaremus.
+            </p>
+          {% endblock team_content %}
+        </section>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-12 calendar-content">
+        <section id="calendar">
+          {% block calendar_content %}
+            <h1>Calendar section</h1>
+            <p>
+            Ipsum excepteur imitarentur, irure hic se aute ullamco hic do aut ipsum elit
+            dolor e malis quamquam do occaecat, singulis a constias id do anim quem ita
+            commodo, doctrina multos senserit voluptate, incididunt illum culpa est sunt. Et
+            id relinqueret ex summis offendit cupidatat. Offendit dolore multos singulis
+            sint id iudicem fore tamen vidisse minim ita ab irure aute noster nescius do
+            aliqua est quibusdam.Iudicem est amet iudicem. Offendit ipsum fugiat quibusdam
+            quorum, sed incididunt se laboris, expetendis velit sunt ab legam iis iis fugiat
+            veniam quis cupidatat, an sunt minim est possumus, magna mandaremus ubi
+            adipisicing ex multos comprehenderit appellat duis quamquam ad offendit ipsum
+            laboris ingeniis. Occaecat velit a vidisse domesticarum, ingeniis esse magna ita
+            amet.
+            </p>
+            <p>
+            Ea e multos malis quae, ne fugiat voluptate proident an commodo velit sint
+            constias elit, quorum ex arbitror. Nostrud do nisi. Hic sunt proident occaecat,
+            multos consequat sed fabulas ut do eu fore quae dolore eu do fugiat quis tempor
+            fabulas in eu illum excepteur praesentibus si admodum quae nisi ea malis nam
+            aliqua proident adipisicing, incurreret e probant. Constias praesentibus iis
+            incididunt, veniam hic possumus est noster.Quibusdam quid quamquam ut et e
+            multos magna sunt. Officia veniam aute a aute. Quid offendit despicationes ut
+            senserit dolor velit deserunt nulla.
+            </p>
+            <p>
+            Hic voluptate ea fabulas hic quae deserunt est exquisitaque. Voluptate ab
+            multos. Id hic amet excepteur.Veniam incurreret do possumus, appellat dolor
+            summis ne sint qui aute quibusdam doctrina, ne duis si esse, doctrina export iis
+            fabulas familiaritatem in quibusdam cillum incididunt eiusmod ab senserit ne
+            aliqua ea in qui amet consequat. Eu aut voluptatibus, magna excepteur cupidatat.
+            Id senserit ex mandaremus se te aute coniunctione do ita quid proident quamquam
+            ea irure possumus se aute magna, laboris quid iis possumus exercitation de eu
+            qui tempor expetendis, an nisi irure anim incididunt, magna fabulas vidisse.
+            </p>
+          {% endblock calendar_content %}
+        </section>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-12 contact-content">
+        <section id="contact">
+          {% block contact_content %}
+            <h1>Contact section</h1>
+            <p>
+            Proident fore voluptate te ita aliqua esse quid pariatur, incurreret quem tamen
+            iis illum, qui an enim probant, et ad export ingeniis, nisi te offendit ut fore,
+            iis mentitum voluptatibus, officia velit mandaremus senserit. Sint probant o
+            dolore eram te ubi ubi eram elit irure quo cillum eruditionem arbitror eram
+            singulis, quis nostrud est concursionibus, ut do exercitation quo excepteur
+            labore offendit, do voluptate arbitrantur est e illum ex sint. Ex multos
+            doctrina sempiternum, aut summis dolore o laboris se do aliquip familiaritatem
+            et possumus duis de probant praesentibus.Incurreret nisi quibusdam. Noster
+            officia consectetur ad o noster praesentibus. Ab sint malis dolore incurreret,
+            an sunt commodo aut tamen nostrud id officia nam culpa aut senserit ex culpa ut
+            et enim arbitror deserunt, ne anim sint enim occaecat, ad fabulas philosophari,
+            ita fore vidisse adipisicing.
+            </p>
+            <p>
+            Quorum sed fabulas se sint, ad litteris iis occaecat an velit quo ad esse
+            constias, fugiat officia se fabulas. Officia nam noster officia ad arbitror duis
+            non constias relinqueret ut do irure quid si ullamco, est fore multos sed
+            cupidatat, proident cillum pariatur expetendis qui expetendis exquisitaque ab
+            litteris ita sed malis quibusdam exercitation, offendit si amet. Id si nulla
+            expetendis, multos offendit litteris.Anim possumus ne praesentibus ad quorum
+            commodo ita nulla aliqua non irure probant quo consectetur, occaecat irure duis
+            constias aliqua, enim expetendis commodo et eu ita tamen doctrina, illum quo et
+            tempor vidisse nam cernantur si anim admodum. Arbitror transferrem hic deserunt
+            ita nam summis adipisicing, ad ex relinqueret, id aute relinqueret, ubi dolor
+            legam e cernantur nam laborum in eram incurreret est duis admodum praetermissum,
+            incididunt ut sunt. Vidisse ita veniam vidisse.
+            </p>
+            <p>
+            Iis eram fidelissimae, id veniam consequat despicationes nam nescius sunt legam
+            mentitum legam aut nam minim esse id nescius. Et cillum ab irure ea ut elit ut
+            quis. Illum laborum quo adipisicing, an aliqua quis sed constias. Sed nisi
+            nostrud singulis.Ex quid eruditionem, ab labore cernantur, si litteris
+            exquisitaque, ubi sint ita quid id laborum dolore export non tamen e ad nostrud
+            in cernantur nam si quis culpa ab vidisse qui irure e quamquam. Officia magna
+            consequat. Est nulla culpa a laborum o ex velit firmissimum ex duis ex
+            mandaremus, fugiat fabulas a expetendis, ita si illustriora, quibusdam a minim
+            incurreret hic te quo tractavissent, malis hic doctrina te multos.
+            </p>
+          {% endblock contact_content %}
+        </section>
+      </div>
+    </div>
+  </div>
+{% endblock main %}

@@ -1,0 +1,345 @@
+a{color:#FFFFFF; text-decoration:none}
+a:hover{color:#f79422}
+a img{border:0}
+h1, h2, h3, h4, h5, p{font-family:"Avenir Next", arial, sans-serif; font-weight:normal; border-bottom:1px dotted #cccc99; padding-bottom:8px; text-shadow:1px 1px 1px #9a7f60}
+h1{font-size:30px}
+h2{}
+h3{font-size:14px}
+h4{color:#fff}
+h5{font-size:16px}
+p{ font-size:12px; margin:-5px 10px 10px 0; color:#2a160e}
+
+/*******************************************************************************************
+Homepage
+*********************************************************************************************/
+	
+	
+	body{margin:0 auto; padding:0; border:0; background-image:url(../images/bg.jpg); background-repeat:repeat; width:100%; font-family:"Century Gothic"}
+	#container{margin:0 auto; width:980px; height:auto;}
+	#RepeatingFence{position:absolute; left:0; top:30px; border-bottom:1px dotted #f79422; border-top:1px dotted #f79422; z-index:0; height:40px; width:100%; margin:0; background-image:url(../images/HeaderBack.png); background-repeat:repeat-x}
+	#sliderBack{width:100%; 
+			height:444px; 
+			background-image:url(../images/SliderBack.jpg); 
+			background-repeat:repeat-x; 
+			top:0;
+			left:0; 
+			position:absolute; z-index:-1}
+	#FenceTop{background-image:url(../images/FenceTop.png); background-repeat:repeat-x; width:100%; height:14px; position:absolute; top:444px; left:0}
+	#InsideHeader{position:absolute; left:0; top:0px; background-position:center; border-bottom:1px dotted #f79422; border-top:1px dotted #f79422; z-index:-1; height:100px; width:100%; margin:0; background-image:url(../images/SliderBack.jpg); background-repeat:repeat-x}
+	#header{}
+	#Rua{position:absolute; z-index:-1; width:873px; height:655px; top:360px}
+	#RuaPhoto{padding:0; margin:0}
+	#RuaPhoto tr{padding:0; margin:0}
+	#RuaPhoto tr td{padding:0; margin:0}
+	#logo{width:243; height:104px; z-index:5; position:absolute; top:3px; margin-left:30px;
+		-webkit-box-shadow:-1px 1px 5px #999;
+		-moz-box-shadow:-1px 1px 5px #999; 
+		box-shadow:-1px 1px 5px #999; }
+	#mainNav{position:absolute; z-index:3; top:20px; width:980px}
+	#mainNav ul{margin-left:250px; float:right}
+	#mainNav ul li{display:inline; float:left; list-style:none; margin:0 10px; font-size:15px; padding:5px; font-family:"Century Gothic"; font-weight:500; text-shadow:1px 0 1px #999999}
+	#mainNav ul li a{color:#fff; text-decoration:none; padding:6px 20px;}
+	#mainNav ul li a:hover{color:#fff; background-color:#f79422;
+			-webkit-border-top-right-radius: 9px;
+			-webkit-border-bottom-left-radius: 9px;
+			-moz-border-radius-topright: 9px;
+			-moz-border-radius-bottomleft: 9px;
+			border-top-right-radius: 9px;
+			border-bottom-left-radius: 9px;
+			-webkit-box-shadow:-1px 1px 1px #999;
+		-moz-box-shadow:-1px 1px 1px #999; 
+		box-shadow:-1px 1px 1px #999;  
+			}
+	#content{width:980px; height:auto; top:0;}
+	#topGraph{margin:245px 15px}
+	#topGraph h1{
+		  font-family: 'Century Gothic', serif;
+		  font-size: 100px;
+		  color:#440404;
+		  font-style: normal;
+		  font-weight: 400;
+		  text-shadow: none;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		  letter-spacing: 0em;
+		  word-spacing: 0em;
+		  line-height: 1em;
+		  margin:15px 15px -25px 15px;
+		  text-shadow:2px 0px 5px #000
+}
+	#BottomBars{border-top:1px dotted #333; height:525px; margin-top:10px}
+	#HomeDesc{width:320px; display:inline; float:left}
+	#HomeDesc p{margin-right:40px}
+	.LiveryBottom{width:205px; display:inline; float:left; margin-right:15px}
+	.LiveryImg{width:190px; height:240px}
+	.LiveryImg img{margin-top:30px}
+	.BottomButtons{position:absolute; margin-top:445px; margin-left:120px; float:right; z-index:2; font-family:"Century Gothic"; font-size:12px}
+	.BottomButtons a{color:#fff;
+		background-color:#f79422;
+		text-decoration:none;
+		padding:5px;
+		-webkit-border-top-right-radius: 9px;
+		-webkit-border-bottom-left-radius: 9px;
+		-moz-border-radius-topright: 9px;
+		-moz-border-radius-bottomleft: 9px;
+		border-top-right-radius: 9px;
+		border-bottom-left-radius: 9px;
+		-webkit-box-shadow:-1px 1px 1px #999;
+		-moz-box-shadow:-1px 1px 1px #999; 
+		box-shadow:-1px 1px 1px #999;  
+			}
+	#Blue{background-color:#FF0000}
+	.BottomButtons a:hover{color:#f79422; background-color:#fff}
+
+	#footer{width:100%; height:180px; background-image:url(../images/grasser.png); background-position:top center; background-repeat:repeat-x; position:absolute; z-index:2; }
+	#footerInside{width:980px; margin:0 auto;}
+	#footerInside ul{width:980px;}
+	#footerInside ul li{display:inline; float:left; list-style:none}
+	.ZapatosIs{margin-right:25px;  margin-top:0px; width:240px}
+	.ZapatosIs h3{color:#FFFFFF; font-weight:bold}
+	.ZapatosIs p{font-size:11px; color:#FFFFFF}
+	.Social{margin-left:25px; width:120px}
+	.Social h1{font-size:18px; }
+	.Social h1 a{color:#FFFFFF; text-decoration:none; padding:8px 0; margin-top:8px; height:14px;  border-bottom:1px dotted #999}
+	.Copywrite{width:100%; margin-top:180px; height:45px; position:absolute; z-index:-1; background-image:url(../images/FooterBack.jpg); background-repeat:repeat-x }
+	
+	
+	.list_carousel {margin: 0 0 30px -10px; width: 960px; height:150px
+			}
+			.basic_config{width: 960px; height:150px}
+			.list_carousel ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: block;
+			}
+			.list_carousel li {
+				font-size: 40px;
+				width: 185px;
+				height: 159px;
+				padding: 0;
+				margin: 6px;
+				display: block;
+				float: left;
+			}
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+.SocialIcon{height:15px; width:15px; float:left; padding-left:10px; background-repeat:no-repeat}
+
+
+
+
+#ThreeColumns{height:950px; width:980px; margin-top:150px}
+#col1, #col2, #col3{display:inline; float:left; width:303px; margin:0 10px}
+#col1{}
+#col2{}
+#col3{}
+
+/*******************************************************
+SLIDER
+*******************************************************/
+		.info_slide	h1	{color:#fff;}		
+		.info_slide	p	{}		
+		.more_btn	{background:transparent url(../images/view_more_btn.gif) 0px 0;	}
+		.more_btn:hover	{
+			background:transparent url(../images/view_more_btn.gif) 0px -46px;
+		}		
+		.slide1	{background-image:url(../images/HowHappy.png); background-position:top left; width:978px; 
+				height:398px; background-repeat:no-repeat; margin-top:23px;}		
+		.slide2	{background-image:url(../images/MeetDinyee.png);
+				background-position:top left; width:978px; 
+				height:398px; background-repeat:no-repeat; margin-top:23px;}
+		.slide3	{background:transparent url(../images/puppies.png); background-repeat:no-repeat; margin-top:45px; }
+		.slide4	{background-image:url(../images/PieOfTheMonth_PieBack.jpg); background-repeat:no-repeat; margin-top:15px; height:390px}
+		
+		#loopedSlider	{
+			margin-top:20px;
+			position:relative;
+		}
+		
+		.container { width:982px; height:430px; overflow:hidden; position:relative }
+		.slides { position:absolute;}
+		.slides .slide { position:absolute; top:0; width:980px; display:none; }
+		.info_slide	h1	{
+			font-size:30px;
+			margin:0;
+			margin-bottom:10px;
+		}		
+		.info_slide	p	{
+			font-size:14px;
+		}
+		.slide1, .slide2	{height:402px; width:982px;	}
+		.slide3	{height:400px; width:976px; position:relative;}
+		.slide1 .content_slide	{float:left; margin:21px 0 0 6px;	}
+		.slide1 .info_slide	{float:right; width:300px; 	margin:20px 10px 0 0;}
+		.slide2 .content_slide	{
+			float:right;
+			margin:21px 39px 0 0px;
+		}
+		.slide2 .info_slide	{
+			float:left;
+			width:300px;
+			margin:20px 10px 0 0;
+		}
+		.SlideButton{width:150px; height:30px; position:absolute; top:320px; margin-left:150px;}
+		.SlideButton a{padding:5px 10px;
+			color:#fff;
+			background-color:#f79422;
+			-webkit-border-top-right-radius: 9px;
+			-webkit-border-bottom-left-radius: 9px;
+			-moz-border-radius-topright: 9px;
+			-moz-border-radius-bottomleft: 9px;
+			border-top-right-radius: 9px;
+			border-bottom-left-radius: 9px;
+			-webkit-box-shadow:-1px 1px 1px #999;
+		-moz-box-shadow:-1px 1px 1px #999; 
+		box-shadow:-1px 1px 1px #999;  
+			}
+		.SlideButton a:hover{background-color:#fff; color:#f79422}
+		
+		.slide3 .content_slide	{
+			margin:100px 0px 0 690px;
+		}
+		.slide3 .content_slide	p{position:absolute; color:#FFF; font-weight:700; width:220px}
+		.slide3 .info_slide	{
+			width:510px;
+			margin:150px 0 0 240px;
+			position:absolute;
+		}
+.slider-nav	{position:absolute; 	top:400px; 	right:240px; z-index:15 }
+		
+ul.pagination { list-style-type:none; margin:0; padding:0; margin-right:50px;}
+		ul.pagination li { float:left; }	
+		ul.pagination a { 
+			display:block; 
+			width:22px;
+			height:22px;	
+			text-indent:-999999px;
+			outline:none;
+		}
+		.previous { 
+			position:absolute; 
+			right:20px;
+			display:block; 
+			width:22px; height:22px;
+			text-indent:-999999px;
+			outline:none;
+		}		
+		.next { 
+			position:absolute; 
+			right:0;
+			display:block; 
+			width:22px; height:22px; 
+			text-indent:-999999px;
+			outline:none;
+		}
+		ul.pagination a {background:url(../images/sprite_default.png) -98px -37px no-repeat;}
+		ul.pagination li.active a {background-position:-69px -37px; outline:none;}
+		.previous {background:url(../images/sprite_default.png) -130px -37px no-repeat;}
+		.previous:hover	{background:url(../images/sprite_default.png) -6px -37px no-repeat;}
+		
+		.next {background:url(../images/sprite_default.png) -157px -37px no-repeat;}
+		.next:hover	{
+			background:url(../images/sprite_default.png) -33px -37px no-repeat;
+		}
+		
+/****************************************************************		
+TESTIMONIALS
+********************************************************************/
+.Pokey{width:93px; height:125px;display:block;background-position:0px 0px; float:left ;margin-right:15px;background-image:url(../images/Pokey.png); background-repeat:no-repeat;}
+.Pokey1{width:129px; height:108px;display:block;background-position:0px 0px; float:left ;margin-right:15px;background-image:url(../images/Pokey1.png); background-repeat:no-repeat;}
+.Pokey3{width:140px; height:129px;display:block;background-position:0px 0px; float:left ;margin-right:15px;background-image:url(../images/Pokey3.png); background-repeat:no-repeat;}   
+.Pokey4{width:93px; height:125px;display:block;background-position:0px 0px; float:right;margin-right:15px;background-image:url(../images/Pokey4.png); background-repeat:no-repeat;}     
+.PokeyText{text-align:left; font-size:11px; width:300px; padding-right:15px; }
+.Pokey5{width:111px; height:138px;display:block;background-position:0px 0px; float:right;margin-right:15px;background-image:url(../images/Pokey5.png); background-repeat:no-repeat;}
+.Pokey6{width:114px; height:115px;display:block;background-position:0px 0px; float:right;margin-right:15px;background-image:url(../images/Pokey6.png); background-repeat:no-repeat;}
+.Pokey7{width:114px; height:115px;display:block;background-position:0px 0px; float:right;margin-right:15px;background-image:url(../images/Pokey7.png); background-repeat:no-repeat;} 
+
+/****************************************************************		
+CONTACT
+********************************************************************/
+#Contactfailure{text-align:left; position:absolute; top:280px; margin-left:300px; font-size:24px; color:#FFFFFF; background-color:#FF6600; width:400px; height:100px; -moz-border-radius: 8px 8px; -webkit-border-top-left-radius: 8px 8px; -webkit-border-top-right-radius: 8px 8px; border:1px dotted #fff}
+#Contactfailure h1{margin-left:15px; font-size:18px;}
+#Contactfailure p{ margin-left:15px; font-size:12px}
+label{font:"Century Gothic"}
+#ajax_form {width:410px; font:"Century Gothic"; font-size:11px;line-height:9px;}
+#ajax_form td{font:"Century Gothic";font-size:9px; line-height:9px;}
+#ajax_form_header {font:"Century Gothic";font-size:1em;font-weight:bold;text-align:right;line-height:9px;}
+#returned_value{font:"Century Gothic"; text-align:right;font-size:11px;color:#000000;line-height:9px;}
+#go {border:1px solid #CCCCCC;background:#FFF;line-height:9px;}
+.imputText{font-family:"Century Gothic"; font-size:9px; width:115px; text-transform:uppercase; color:#3c2000; text-align:right}		
+ 
+ 
+/****************************************************************		
+SERVICES
+********************************************************************/
+ 
+.FixedGoing{position:fixed; 
+	top:110px; 
+	right:0; 
+	z-index:500; 
+	background-image:url(../images/WhiteBack.png); 
+	background-repeat:repeat; padding:3px 0 3px 3px; 
+	border-top:1px dotted #f79422;
+	border-left:1px dotted #f79422;
+	border-bottom:1px dotted #f79422;
+	-webkit-border-top-right-radius: 9px;
+	-webkit-border-bottom-left-radius: 9px;
+	-moz-border-radius-topright: 9px;
+	-moz-border-radius-bottomleft: 9px;
+	border-top-right-radius: 9px;
+	border-bottom-left-radius: 9px; }
+.FixedGoing img{margin-bottom:1px}
+.FixedGoing a{color:#fff;
+		display:block;
+		background-color:#cccc99;
+		font-family:"Century Gothic";
+		font-size:10px;
+		width:80px;
+		height:40px;
+		margin:2px 0 2px 2px;
+		text-decoration:none;
+		-webkit-border-top-right-radius: 9px;
+		-webkit-border-bottom-left-radius: 9px;
+		-moz-border-radius-topright: 9px;
+		-moz-border-radius-bottomleft: 9px;
+		border-top-right-radius: 9px;
+		border-bottom-left-radius: 9px;}
+.FixedGoing a:hover{color:#fff;	background-color:#006600}
+.blank{border:none; }
+.smallPrint{font-size:10px}
+#WTSessions{width:350px; margin:25px 0px 25px 0}
+#WTSessions li{display:inline; float:left; widows:180px; margin-right:15px}
+#scrollToHere1{top:900px}
+#Train{position:absolute; margin-top:-60px}
+#Play{position:absolute; margin-top:-60px}
+.DinyeeImage{height:105px; width:120px; padding:2px; float:right; border:1px dotted #f79422} 
+.Coming{font-size:12px; float:right}
+.Orange{border-top:3px solid #f79422; width:100%; }
+.Blue{border-top:3px solid #27aae1; width:100%; height:570px}
+.Pink{border-top:3px solid #ed197a; width:100%;height:470px}
+#TwoColumns{width:980px}
+.TwoLeft{width:450px;  display:inline; float:right}
+.TwoRight{width:500px; display:inline; float:right; margin-right:30px;}
+
+/****************************************************************		
+ABOUT
+********************************************************************/
+.DinyeeImage{height:145px; width:130px; padding:10px; float:right; border:1px dotted #f79422}
+#Grasser{position:absolute; z-index:-1; top:830px; left:0; width:100%; height:312px; background-image:url(../images/grasser1.png); background-repeat:repeat-x}
+
+
+
+/************************************************************
+HTML CONTACT FORM
+***************************************************************/
+#htmlform{border:0}
+.main_fieldset{border:0}
+.formbody ol li{border-top:1px dotted #333; margin:3px 0}
+label{width:80px; float:left; display:inline}
+.fielddesc_block{display:inline; float:right}
+.fieldlabel_block{display:inline; float:left}
+.TextArea{float:right}
+.field_block{font-size:10px; text-transform:uppercase}

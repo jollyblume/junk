@@ -1,0 +1,3 @@
+/*
+ * one-page-theme javascript
+ */

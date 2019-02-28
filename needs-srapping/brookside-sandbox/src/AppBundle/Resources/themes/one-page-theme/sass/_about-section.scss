@@ -1,0 +1,24 @@
+@mixin about-card-variant($parent, $border-color, $max-width: 800px) {
+  #{$parent} {
+    @extend .card-shadow;
+    border-color: $border-color;
+    max-width: $max-width;
+
+    .card-img-overlay {
+      pointer-events: none;
+
+      .card-block {
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+@include about-card-variant( '.card-staff', $wt-orange-dark);
+@include about-card-variant( '.card-focus', $wt-turquoise-dark);
+@include about-card-variant( '.card-results', $wt-pink-dark);
+
+.about-card-wrapper {
+  margin-bottom: $jumbotron-padding;
+}

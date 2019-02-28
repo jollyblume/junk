@@ -1,0 +1,6 @@
+/phpunit.xml
+/vendor/
+/bin/
+/var/
+!/var/coverage/*
+!/var/coverage/.gitkeep

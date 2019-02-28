@@ -1,0 +1,9 @@
+services:
+    yyb_rootnode:
+        class: YoYogaBear\Bundle\PhpcrBundle\Registry\RootNodeDefinition
+        arguments:
+            - "/testPath/testRootNode"
+            - "YoYogaBear\\Bundle\\PhpcrBundle\\Document\\RootNode"
+        public: false
+        tags:
+            - {name: yyb_phpcr.root_node}

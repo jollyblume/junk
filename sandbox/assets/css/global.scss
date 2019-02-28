@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+html, body {
+  height: 100%;
+}
+body {
+  position: relative;
+  padding-top: 80px;
+}
+// fix from https://github.com/twbs/bootstrap/issues/1768
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  visibility: hidden;
+}
+.bg-smoke {
+  background-color: rgba(0, 0, 0, .6) !important;
+}
+.hero-content {
+  @extend .rounded;
+}

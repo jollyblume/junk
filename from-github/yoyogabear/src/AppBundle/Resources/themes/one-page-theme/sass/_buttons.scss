@@ -1,0 +1,22 @@
+/* buttons */
+.btn {
+  &-icon {
+    border-radius: 50%;
+  }
+
+  &-fixed {
+    position: fixed;
+    z-index: $zindex-fixed;
+  }
+
+  &-relative {
+    position: relative;
+    z-index: $zindex-fixed;
+  }
+
+  &-fade {
+    /* allow btn to fade in/out for an event such as scrolling or mouse proximity
+     * need multiple events <=> multiple btn
+     */
+  }
+}

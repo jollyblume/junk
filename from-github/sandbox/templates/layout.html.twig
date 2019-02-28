@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+
+{% block header %}
+  <header class="fixed-top">
+    <nav id="herobar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-magic"></i>else/sandbox</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          {% block navbar_collapse %}
+            <span class="navbar-text">
+              layout.html.twig
+            </span>
+          {% endblock navbar_collapse %}
+        </div>
+      </div>
+    </nav>
+    {% block header_extra %}{% endblock header_extra %}
+    {% block breadcrumbs %}{% endblock breadcrumbs %}
+  </header>
+{% endblock header %}
+
+{% block main %}
+  <div id="skippy" class="container">
+    <div class="row">
+      <main class="col main-content">
+        {% block main_content %}
+        {% endblock main_content %}
+      </main>
+    </div>
+  </div>
+{% endblock main %}
+
+{% block head_style %}
+  {{ parent() }}
+
+  <link rel="stylesheet" href="{{ asset('build/css/global.css') }}" />
+{% endblock head_style %}
+
+{% block foot_script %}
+  {{ parent() }}
+
+  <script src="{{ asset('build/js/global.js') }}"></script>
+{% endblock foot_script %}

@@ -1,0 +1,10 @@
+services:
+    yyb_phpcr:
+        class: YoYogaBear\Bundle\PhpcrBundle\Registry\Registry
+
+    app.phpcr_initializer_site:
+        class: YoYogaBear\Bundle\PhpcrBundle\Phpcr\YybPhpcrInitializer
+        arguments:
+            - "@yyb_phpcr"
+        tags:
+            - { name: doctrine_phpcr.initializer }

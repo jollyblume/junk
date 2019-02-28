@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+body {
+  padding-top: 100px;
+}
+// fix from https://github.com/twbs/bootstrap/issues/1768
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+}
+.footer-spacer {
+  min-height: 66px;
+}

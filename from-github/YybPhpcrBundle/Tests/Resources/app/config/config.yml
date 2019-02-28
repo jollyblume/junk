@@ -1,0 +1,42 @@
+imports:
+    - { resource: services.yml }
+
+framework:
+    secret:          "123456"
+    http_method_override: true
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    php_errors:
+        log: true
+
+doctrine:
+    dbal:
+        default_connection: default
+        connections:
+            default:
+                logging: true
+                driver: pdo_sqlite
+                path: "%kernel.root_dir%/phpcr.sqlite"
+
+doctrine_phpcr:
+    session:
+        sessions:
+            default:
+                workspace: "default"
+                username: "admin"
+                password: "admin"
+                backend:
+                    type: doctrinedbal
+                    logging: true
+                    profiling: true
+                    connection: default
+    odm:
+        auto_generate_proxy_classes: true
+        default_document_manager: default
+        document_managers:
+            default:
+                session: default
+                auto-mapping: false
+                mappings:
+                    YybPhpcrBundle: ~

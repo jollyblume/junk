@@ -1,0 +1,8 @@
+{% extends "@App/layout.html.twig" %}
+
+{% block main %}
+  {{ block('main', '@App/Default/hero.html.twig') }}
+    {{ block('main', '@App/Default/about.html.twig') }}
+      {{ block('main', '@App/Default/pricing.html.twig') }}
+        {{ block('main', '@App/Default/word.html.twig') }}
+          {{ block('main', '@App/Default/contact.html.twig') }}{% endblock main %}

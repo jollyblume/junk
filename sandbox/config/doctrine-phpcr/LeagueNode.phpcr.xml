@@ -1,0 +1,31 @@
+<doctrine-mapping
+    xmlns="http://doctrine-project.org/schemas/phpcr-odm/phpcr-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://doctrine-project.org/schemas/phpcr-odm/phpcr-mapping
+    https://github.com/doctrine/phpcr-odm/raw/master/doctrine-phpcr-odm-mapping.xsd"
+    >
+
+    <document
+        name="App\Document\LeagueNode">
+        <!-- Hierarchy -->
+        <child name="calendarBag" node-name="calendar" />
+        <child name="leagueBag" node-name="league" />
+        <child name="playerBag" node-name="player" />
+        <child name="teamBag" node-name="team" />
+        <child name="tounamentBag" node-name="tournament" />
+
+        <!-- Valid child classes !-->
+        <child-class>App\Store\CalendarStoreInterface</child-class>
+        <child-class>App\Store\LeagueStoreInterface</child-class>
+        <child-class>App\Store\PlayerStoreInterface</child-class>
+        <child-class>App\Store\TeamStoreInterface</child-class>
+        <child-class>App\Store\TournamentStoreInterface</child-class>
+
+        <!-- References -->
+        <reference-many name="emailReferences" target-document="App\Document\EmailNode"/>
+        <reference-many name="playerReferences" target-document="App\Document\PlayerNode"/>
+        <reference-many name="teamReferences" target-document="App\Document\TeamNode"/>
+
+    </document>
+
+</doctrine-mapping>

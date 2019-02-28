@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/else/sites/sandbox/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src=".js/html5shiv.min.js"></script>
+  <script src=".js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/home/else/sites/sandbox/src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/AdminController.php.html#8">App\Controller\AdminController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ReactController.php.html#8">App\Controller\ReactController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TestController.php.html#8">App\Controller\TestController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/AbstractTreeNode.php.html#15">App\Document\AbstractTreeNode</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/RootNode.php.html#17">App\Document\RootNode</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/BaseException.php.html#11">App\Exception\BaseException</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#11">App\Exception\FlattenException</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Initializer/PhpcrInitializer.php.html#15">App\Initializer\PhpcrInitializer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#12">App\Kernel</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/MenuBuilder.php.html#7">App\Menu\MenuBuilder</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrChildrenTrait.php.html#18">PhpcrChildrenTrait</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#14">PhpcrNodeTrait</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/ExceptionContext.php.html#8">App\Exception\ExceptionContext</a></td><td class="text-right">50%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#14">PhpcrNodeTrait</a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="Kernel.php.html#12">App\Kernel</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#11">App\Exception\FlattenException</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Initializer/PhpcrInitializer.php.html#15">App\Initializer\PhpcrInitializer</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrChildrenTrait.php.html#18">PhpcrChildrenTrait</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Exception/ExceptionContext.php.html#8">App\Exception\ExceptionContext</a></td><td class="text-right">22</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/AdminController.php.html#13"><abbr title="App\Controller\AdminController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrChildrenTrait.php.html#32"><abbr title="PhpcrChildrenTrait::getChildren">getChildren</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Initializer/PhpcrInitializer.php.html#79"><abbr title="App\Initializer\PhpcrInitializer::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#18"><abbr title="App\Kernel::getCacheDir">getCacheDir</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#23"><abbr title="App\Kernel::getLogDir">getLogDir</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#28"><abbr title="App\Kernel::registerBundles">registerBundles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#38"><abbr title="App\Kernel::configureContainer">configureContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#53"><abbr title="App\Kernel::configureRoutes">configureRoutes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/MenuBuilder.php.html#16"><abbr title="App\Menu\MenuBuilder::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Menu/MenuBuilder.php.html#21"><abbr title="App\Menu\MenuBuilder::createTestMenu">createTestMenu</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrChildrenTrait.php.html#43"><abbr title="PhpcrChildrenTrait::addChild">addChild</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Initializer/PhpcrInitializer.php.html#29"><abbr title="App\Initializer\PhpcrInitializer::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrChildrenTrait.php.html#71"><abbr title="PhpcrChildrenTrait::addChildIfMissing">addChildIfMissing</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#44"><abbr title="PhpcrNodeTrait::getNodenameFromId">getNodenameFromId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#62"><abbr title="PhpcrNodeTrait::getNodename">getNodename</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#77"><abbr title="PhpcrNodeTrait::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#94"><abbr title="PhpcrNodeTrait::getParent">getParent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#103"><abbr title="PhpcrNodeTrait::getParentId">getParentId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#115"><abbr title="PhpcrNodeTrait::setNodename">setNodename</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#137"><abbr title="PhpcrNodeTrait::setId">setId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Initializer/PhpcrInitializer.php.html#40"><abbr title="App\Initializer\PhpcrInitializer::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#58"><abbr title="App\Exception\FlattenException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ReactController.php.html#13"><abbr title="App\Controller\ReactController::basicScroll">basicScroll</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/BaseException.php.html#28"><abbr title="App\Exception\BaseException::getContext">getContext</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TestController.php.html#13"><abbr title="App\Controller\TestController::landingpage">landingpage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TestController.php.html#21"><abbr title="App\Controller\TestController::mainpage">mainpage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TestController.php.html#29"><abbr title="App\Controller\TestController::spapage">spapage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/TestController.php.html#37"><abbr title="App\Controller\TestController::wtfpage">wtfpage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/AbstractTreeNode.php.html#23"><abbr title="App\Document\AbstractTreeNode::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/RootNode.php.html#25"><abbr title="App\Document\RootNode::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/RootNode.php.html#35"><abbr title="App\Document\RootNode::addTreeNode">addTreeNode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/BaseException.php.html#19"><abbr title="App\Exception\BaseException::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/BaseException.php.html#36"><abbr title="App\Exception\BaseException::getPublicMessage">getPublicMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#53"><abbr title="App\Exception\FlattenException::getTranslationParameters">getTranslationParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/BaseException.php.html#44"><abbr title="App\Exception\BaseException::getDebugMessage">getDebugMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/BaseException.php.html#52"><abbr title="App\Exception\BaseException::getParameters">getParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/BaseException.php.html#60"><abbr title="App\Exception\BaseException::getStatusCode">getStatusCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/ExceptionContext.php.html#38"><abbr title="App\Exception\ExceptionContext::getTranslationParameters">getTranslationParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/ExceptionContext.php.html#48"><abbr title="App\Exception\ExceptionContext::transformIntoTranslationPlaceholders">transformIntoTranslationPlaceholders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#25"><abbr title="App\Exception\FlattenException::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#38"><abbr title="App\Exception\FlattenException::getPublicMessage">getPublicMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#43"><abbr title="App\Exception\FlattenException::getDebugMessage">getDebugMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#48"><abbr title="App\Exception\FlattenException::getParameters">getParameters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#159"><abbr title="PhpcrNodeTrait::setParent">setParent</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Exception/ExceptionContext.php.html#48"><abbr title="App\Exception\ExceptionContext::transformIntoTranslationPlaceholders">transformIntoTranslationPlaceholders</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Initializer/PhpcrInitializer.php.html#40"><abbr title="App\Initializer\PhpcrInitializer::init">init</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Kernel.php.html#28"><abbr title="App\Kernel::registerBundles">registerBundles</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#77"><abbr title="PhpcrNodeTrait::getId">getId</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Exception/FlattenException.php.html#25"><abbr title="App\Exception\FlattenException::create">create</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrChildrenTrait.php.html#43"><abbr title="PhpcrChildrenTrait::addChild">addChild</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrChildrenTrait.php.html#71"><abbr title="PhpcrChildrenTrait::addChildIfMissing">addChildIfMissing</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#44"><abbr title="PhpcrNodeTrait::getNodenameFromId">getNodenameFromId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#62"><abbr title="PhpcrNodeTrait::getNodename">getNodename</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#103"><abbr title="PhpcrNodeTrait::getParentId">getParentId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#115"><abbr title="PhpcrNodeTrait::setNodename">setNodename</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#137"><abbr title="PhpcrNodeTrait::setId">setId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Document/Traits/PhpcrNodeTrait.php.html#159"><abbr title="PhpcrNodeTrait::setParent">setParent</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.0.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.2.5</a> with <a href="https://xdebug.org/">Xdebug 2.6.0</a> and <a href="https://phpunit.de/">PHPUnit 7.1.5</a> at Sun May 13 18:35:40 MDT 2018.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  <script src=".js/holder.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([12,0,0,0,0,0,1,0,0,0,0,5], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([44,0,0,0,0,0,0,0,0,0,0,5], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Controller\/AdminController.php.html#8\">App\\Controller\\AdminController<\/a>"],[0,1,"<a href=\"Controller\/ReactController.php.html#8\">App\\Controller\\ReactController<\/a>"],[0,4,"<a href=\"Controller\/TestController.php.html#8\">App\\Controller\\TestController<\/a>"],[0,1,"<a href=\"Document\/AbstractTreeNode.php.html#15\">App\\Document\\AbstractTreeNode<\/a>"],[100,0,"<a href=\"Document\/PlayerTree.php.html#6\">App\\Document\\PlayerTree<\/a>"],[0,2,"<a href=\"Document\/RootNode.php.html#17\">App\\Document\\RootNode<\/a>"],[0,6,"<a href=\"Exception\/BaseException.php.html#11\">App\\Exception\\BaseException<\/a>"],[50,10,"<a href=\"Exception\/ExceptionContext.php.html#8\">App\\Exception\\ExceptionContext<\/a>"],[0,7,"<a href=\"Exception\/FlattenException.php.html#11\">App\\Exception\\FlattenException<\/a>"],[100,0,"<a href=\"Exception\/MissingInterfaceException.php.html#7\">App\\Exception\\MissingInterfaceException<\/a>"],[100,0,"<a href=\"Exception\/NodeExistsException.php.html#7\">App\\Exception\\NodeExistsException<\/a>"],[100,0,"<a href=\"Exception\/OutOfScopeException.php.html#7\">App\\Exception\\OutOfScopeException<\/a>"],[100,0,"<a href=\"Exception\/PropImmutableException.php.html#7\">App\\Exception\\PropImmutableException<\/a>"],[0,6,"<a href=\"Initializer\/PhpcrInitializer.php.html#15\">App\\Initializer\\PhpcrInitializer<\/a>"],[0,8,"<a href=\"Kernel.php.html#12\">App\\Kernel<\/a>"],[0,2,"<a href=\"Menu\/MenuBuilder.php.html#7\">App\\Menu\\MenuBuilder<\/a>"],[0,5,"<a href=\"Document\/Traits\/PhpcrChildrenTrait.php.html#18\">PhpcrChildrenTrait<\/a>"],[0,16,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#14\">PhpcrNodeTrait<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Controller\/AdminController.php.html#13\">App\\Controller\\AdminController::index<\/a>"],[0,1,"<a href=\"Controller\/ReactController.php.html#13\">App\\Controller\\ReactController::basicScroll<\/a>"],[0,1,"<a href=\"Controller\/TestController.php.html#13\">App\\Controller\\TestController::landingpage<\/a>"],[0,1,"<a href=\"Controller\/TestController.php.html#21\">App\\Controller\\TestController::mainpage<\/a>"],[0,1,"<a href=\"Controller\/TestController.php.html#29\">App\\Controller\\TestController::spapage<\/a>"],[0,1,"<a href=\"Controller\/TestController.php.html#37\">App\\Controller\\TestController::wtfpage<\/a>"],[0,1,"<a href=\"Document\/AbstractTreeNode.php.html#23\">App\\Document\\AbstractTreeNode::__construct<\/a>"],[0,1,"<a href=\"Document\/RootNode.php.html#25\">App\\Document\\RootNode::__construct<\/a>"],[0,1,"<a href=\"Document\/RootNode.php.html#35\">App\\Document\\RootNode::addTreeNode<\/a>"],[0,1,"<a href=\"Exception\/BaseException.php.html#19\">App\\Exception\\BaseException::__construct<\/a>"],[0,1,"<a href=\"Exception\/BaseException.php.html#28\">App\\Exception\\BaseException::getContext<\/a>"],[0,1,"<a href=\"Exception\/BaseException.php.html#36\">App\\Exception\\BaseException::getPublicMessage<\/a>"],[0,1,"<a href=\"Exception\/BaseException.php.html#44\">App\\Exception\\BaseException::getDebugMessage<\/a>"],[0,1,"<a href=\"Exception\/BaseException.php.html#52\">App\\Exception\\BaseException::getParameters<\/a>"],[0,1,"<a href=\"Exception\/BaseException.php.html#60\">App\\Exception\\BaseException::getStatusCode<\/a>"],[100,1,"<a href=\"Exception\/ExceptionContext.php.html#15\">App\\Exception\\ExceptionContext::__construct<\/a>"],[100,1,"<a href=\"Exception\/ExceptionContext.php.html#23\">App\\Exception\\ExceptionContext::getPublicMessage<\/a>"],[100,1,"<a href=\"Exception\/ExceptionContext.php.html#28\">App\\Exception\\ExceptionContext::getDebugMessage<\/a>"],[100,1,"<a href=\"Exception\/ExceptionContext.php.html#33\">App\\Exception\\ExceptionContext::getParameters<\/a>"],[0,1,"<a href=\"Exception\/ExceptionContext.php.html#38\">App\\Exception\\ExceptionContext::getTranslationParameters<\/a>"],[100,1,"<a href=\"Exception\/ExceptionContext.php.html#43\">App\\Exception\\ExceptionContext::getStatusCode<\/a>"],[0,4,"<a href=\"Exception\/ExceptionContext.php.html#48\">App\\Exception\\ExceptionContext::transformIntoTranslationPlaceholders<\/a>"],[0,2,"<a href=\"Exception\/FlattenException.php.html#25\">App\\Exception\\FlattenException::create<\/a>"],[0,1,"<a href=\"Exception\/FlattenException.php.html#38\">App\\Exception\\FlattenException::getPublicMessage<\/a>"],[0,1,"<a href=\"Exception\/FlattenException.php.html#43\">App\\Exception\\FlattenException::getDebugMessage<\/a>"],[0,1,"<a href=\"Exception\/FlattenException.php.html#48\">App\\Exception\\FlattenException::getParameters<\/a>"],[0,1,"<a href=\"Exception\/FlattenException.php.html#53\">App\\Exception\\FlattenException::getTranslationParameters<\/a>"],[0,1,"<a href=\"Exception\/FlattenException.php.html#58\">App\\Exception\\FlattenException::getStatusCode<\/a>"],[0,1,"<a href=\"Initializer\/PhpcrInitializer.php.html#29\">App\\Initializer\\PhpcrInitializer::__construct<\/a>"],[0,4,"<a href=\"Initializer\/PhpcrInitializer.php.html#40\">App\\Initializer\\PhpcrInitializer::init<\/a>"],[0,1,"<a href=\"Initializer\/PhpcrInitializer.php.html#79\">App\\Initializer\\PhpcrInitializer::getName<\/a>"],[0,1,"<a href=\"Kernel.php.html#18\">App\\Kernel::getCacheDir<\/a>"],[0,1,"<a href=\"Kernel.php.html#23\">App\\Kernel::getLogDir<\/a>"],[0,4,"<a href=\"Kernel.php.html#28\">App\\Kernel::registerBundles<\/a>"],[0,1,"<a href=\"Kernel.php.html#38\">App\\Kernel::configureContainer<\/a>"],[0,1,"<a href=\"Kernel.php.html#53\">App\\Kernel::configureRoutes<\/a>"],[0,1,"<a href=\"Menu\/MenuBuilder.php.html#16\">App\\Menu\\MenuBuilder::__construct<\/a>"],[0,1,"<a href=\"Menu\/MenuBuilder.php.html#21\">App\\Menu\\MenuBuilder::createTestMenu<\/a>"],[0,1,"<a href=\"Document\/Traits\/PhpcrChildrenTrait.php.html#32\">PhpcrChildrenTrait::getChildren<\/a>"],[0,2,"<a href=\"Document\/Traits\/PhpcrChildrenTrait.php.html#43\">PhpcrChildrenTrait::addChild<\/a>"],[0,2,"<a href=\"Document\/Traits\/PhpcrChildrenTrait.php.html#71\">PhpcrChildrenTrait::addChildIfMissing<\/a>"],[0,2,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#44\">PhpcrNodeTrait::getNodenameFromId<\/a>"],[0,2,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#62\">PhpcrNodeTrait::getNodename<\/a>"],[0,3,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#77\">PhpcrNodeTrait::getId<\/a>"],[0,1,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#94\">PhpcrNodeTrait::getParent<\/a>"],[0,2,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#103\">PhpcrNodeTrait::getParentId<\/a>"],[0,2,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#115\">PhpcrNodeTrait::setNodename<\/a>"],[0,2,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#137\">PhpcrNodeTrait::setId<\/a>"],[0,2,"<a href=\"Document\/Traits\/PhpcrNodeTrait.php.html#159\">PhpcrNodeTrait::setParent<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
